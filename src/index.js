@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import MainPage from './MainPage';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import EffectDemo from './EffectDemo';
+import PokeMonAPIDemo from './PokeMonAPIDemo';
+import MainPageRouter from './RouterDemo/MainPageRouter';
+import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <MainPageRouter />
+  </BrowserRouter>,
+
   document.getElementById('root')
 );
 
